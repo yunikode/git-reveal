@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+				<h1>Einfuehrung git</h1>
+			</section>
+			<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+				<h1>Einfuehrung git</h1>
+				<h2>Franz Lutzenberger</h2>
+			</section>
+
+			<section>
+
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Was ist git</h1>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Was ist git</h1>
+					<h2>git ist ein Werkzeug zur Versionierung von Dateien</h2>
+				</section>
+			</section>
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Schritt 1</h1>
+					<h2>Root initieren</h2>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						git init
+					</code></pre>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						git init
+						Initialized empty Git repository in /home/fiona/Devel/test/.git/
+
+					</code></pre>
+				</section>
+			</section>
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Schritt 2</h1>
+					<h2>Daten hinzufuegen</h2>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-trim>
+						git add .
+					</code></pre>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-trim>
+						git add .
+						git status
+						
+
+					</code></pre>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-trim data-noescape>
+						git add .
+						git status
+						On branch master
+
+						No commits yet
+
+						Changes to be committed:
+							(use "git rm --cached <file>..." to unstage)
+
+								new file:   css/styles.css
+								new file:   index.html
+
+						</code></pre>
+				</section>
+			</section>
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Schritt 3</h1>
+					<h2>Commit Message schreiben</h2>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						git commit -m 'initial upload'
+					</code></pre>
+				</section>
+				
+			</section>
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Schritt 4</h1>
+					<h2>Commit ins Repository schreiben</h2>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						git push 
+					</code></pre>
+				</section>
+				
+			</section>
+
+
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in einem Repository</h1>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in einem Repository</h1>
+					<h2>a.k.a. warum wir das ganze machen</h2>
+				</section>
+				
+			</section>
+
+			<section data-transition="zoom-in fade-out">
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in Branches</h1>
+				</section>
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in Branches</h1>
+					<h2>a.k.a. saegen am eigenen Ast</h2>
+				</section>
+
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in Branches</h1>
+					<h2>git checkout</h2>
+				</section>
+				
+
+				<section data-transition="zoom-in fade-out" data-auto-animate data-auto-animate-unmatched="fade">
+					<h1>Arbeiten in Branches</h1>
+					<h2>git checkout "branch name"</h2>
+				</section>
+			</section>
+			
+		</div>
+	</div>
+
+
+
+
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			center: true,
+			history: true,
+
+			transition: 'linear',
+			transitionSpeed: 'slow',
+			// backgroundTransition: 'slide',
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
